@@ -1,0 +1,9 @@
+{   
+    "clientID": "123456789",
+
+    "zSecret": "abcdefg",
+    "zReferralCode": "ABCDE",
+
+    "updateInt": 20,
+    "dataUnits": "GB"
+}

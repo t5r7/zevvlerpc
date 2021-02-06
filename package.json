@@ -1,0 +1,23 @@
+{
+  "name": "zevvlerpc",
+  "version": "1.0.0",
+  "description": "Zevvle-Discord Rich Presence",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomfishemoji/zevvlerpc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomfishemoji/zevvlerpc/issues"
+  },
+  "homepage": "https://github.com/tomfishemoji/zevvlerpc#readme",
+  "dependencies": {
+    "discord-rpc": "^3.1.4",
+    "node-fetch": "^2.6.1"
+  }
+}
