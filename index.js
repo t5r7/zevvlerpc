@@ -109,11 +109,16 @@ async function showUsage(whatToShow) {
     activeCardNames = activeCardNames.substring(0, activeCardNames.length - 2);
 
     let refCode = config.zReferralCode || '';
-
     let details, state;
 
     if (whatToShow == 'data') {
-        details = `🌐 Used at least ${monthDataMegabytesRounded}MB this month`;
+        details = '🌐 Used at least ';
+        if(config.dataUnits.toUpperCase() == 'GB') {
+            details += `${monthDataGigabytesRounded}GB`;
+        } else {
+            details += `${monthDataGigabytesRounded}MB`;
+        }
+        details += ' this month';
         state = `🔢 ${activeCardCountText} active SIM card${cardsPlural}`;
     } else if (whatToShow == 'callstexts') {
         details = `💬 Sent at least ${monthSMS} SMS, ${monthMMS} MMS message${textsPlural}`;
